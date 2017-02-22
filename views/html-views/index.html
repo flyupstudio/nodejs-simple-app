@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>JS code task</title>
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+
+        <h1>JS code task</h1>
+
+        <div class="form-group">
+            <form class="navbar-form navbar-left" data-toggle="validator" id="searchForm" role="search">
+
+                <div class="col-sm-3">
+
+                        <input type='text' autocomplete="off"  data-error="Please enter From Location" name="fromLocation" required placeholder="From location" class="form-control" />
+
+                </div>
+                <div class="col-sm-3">
+
+                        <input type='text' autocomplete="off"  name="toLocation" data-error="Please enter To Location" required placeholder="To location" class="form-control" />
+
+                </div>
+
+                <div class="col-sm-3">
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input autocomplete="off" type='text' data-error="Please enter Travel Date"  name="travelDate"  required placeholder="Travel Date" class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <button type="submit"   data-loading-text="Loading..." class="btn btn-default">Submit</button>
+                    <button type="reset"  class="btn btn-default btn-warning">Reset</button>
+                </div>
+        </form>
+
+        <div class="col-sm-12" style="display: none" id="resultsTabs" >
+            <ul class="nav nav-pills">
+                <li class="active">
+                    <a  href="#1a" data-toggle="tab">Overview</a>
+                </li>
+
+            </ul>
+            <div class="tab-content clearfix">
+                <div class="tab-pane active" id="1a">
+                    <h3>Content's background color is the same for the tab</h3>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script type="text/javascript" src="/javascripts/moment.js"></script>
+
+<script type="text/javascript" src="/javascripts/transition.js"></script>
+<script type="text/javascript" src="/javascripts/collapse.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="/javascripts/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="/javascripts/validator.js"></script>
+<script type="text/javascript" src="/javascripts/bootstrap-typehead.min.js"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+</body>
+</html>
